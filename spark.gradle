@@ -1,0 +1,14 @@
+apply plugin: 'application'
+apply plugin: 'groovy'
+
+mainClassName = 'org.zirbes.spark.SparkApp'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.4"
+    compile 'com.sparkjava:spark-core:2.2'
+}
